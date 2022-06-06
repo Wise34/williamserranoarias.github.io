@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- fonr awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+	<header id="titulo">
+      <a href="#" class="brand">
+      	<img src="image/logomarca.JPG">
+      </a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <ul>
+        	<li><a href="#">Inicio</a></li>
+        	<li><a href="#">Perfil</a></li>
+        	<li><a href="#">Proyectos</a></li>
+        	<li><a href="#">Actualidad</a></li>
+        	<li><a href="#">Networking</a></li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <section class="section-main">
+      <h1>Soy, William Serrano</h1>
+    </section>
+
+    <section class="section-two">
+      <h2 id="acerca_de_mi">Acerca de mi</h2>
+      <div class="foto_inicio">
+        <img id="foto_cv" src="image/foto_cv.JPG" width="400"/>
+      </div>
+      <p id="introduccion">Estudiante del último ciclo de la carrera de Electrónica y Automatización Industrial, leal, comprometido con el trabajo, apto para todo tipo de labor en el campo de la electrónica y la automatización. Poseo sólidos conocimientos en electrónica, control de procesos, programación de PLC, electroneumática, instrumentación industrial y conocimientos básicos de mecánica e hidráulica.</p>
+    </section>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+	    //change logo
+	    var logo = document.querySelector(".brand img");
+		if (window.scrollY>0) {
+			logo.setAttribute('src', 'image/logomarca.JPG');
+		}else{
+			logo.setAttribute('src', 'image/logomarca.JPG');
+		}
+
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+  <article class="datos_contacto">
+    <h2 id="contactame">Datos de contacto</h2>
+    <a id="linkcorreo" href="mailto:william.serrano@tecsup.edu.pe" target="_BLANK">Correo</a>
+    <br><p id="correo">william.serrano@tecsup.edu.pe</p>
+    <br><a id="linkedin" href="https://www.linkedin.com/in/serranoariaswilliameduardo/" target="_BLANK">Linkedin</a>
+    <br><p id="celular"> Celular: +51 960 444 969</p>
+  </article>
+
+  <section class="titulo_section">
+    <h2 class="subtitulo_section">Perfil profesional</h2>
+    <br>
+    <br>
+    <h3 class="subtitulo__3">Aptitules/habilidades</h3>
+    <div class="foto_perfil">
+      <img id="foto_habilidad" src="image/programacion_plc.jpg" height="400"/>
+    </div>
+    <ul>
+      <li class="clase__habilidades">- Control de procesos</li>
+      <li class="clase__habilidades">- Instrumentación industrial</li>
+      <li class="clase__habilidades">- Programación PLC y microcontroladores</li>
+      <li class="clase__habilidades">- Diseño electrónico</li>
+      <li class="clase__habilidades">- Instalaciones electricas</li>
+    </ul>
+    <br>
+    <br>
+
+    <h3 class="subtitulo__3">Objetivo Profesional</h3>
+    <div class="foto_perfil">
+      <img id="foto_habilidad" src="image/control_procesos.jpg" height="400"/>
+    </div>
+    <p id="objetivo_profesional">Tengo el objetivo de unirme a un equipo de trabajo que tenga especial enfoque en el área de control y automatización de procesos en el que pueda poner en práctica los conocimientos adquiridos durante mi formación académica, referente a mis expectativas considero importante la existencia de una clara cultura de trabajo y la posibilidad de obtener especializaciones, de igual forma espero estar activamente involucrado en el cumplimiento de los objetivos planificados</p>
+    <br>
+    <br>
+    <h3 class="subtitulo__3">Videocurriculum</h3>
+    <div class="foto_perfil">
+      <img id="foto_habilidad" src="image/videocurriculum.png" height="400"/>
+    </div>
+    <a id="videocurriculum" href="https://www.youtube.com/watch?v=yu_OLK9danc" target="_BLANK">Youtube</a>
+    <br>
+    <br>
+    <br>
+    <p id="frase__favorita">"Date la oportunidad de afrontar desafíos que te permitan superar tus límites y mejorar tu visión del mundo"</p>
+    <br>
+    <br>
+  </section>
+
+  <section class="titulo_section">
+    <h2 class="subtitulo_section">Proyectos</h2>
+
+  </section>
+
+  <footer>
+    <section>
+        <a href="#">Ir al comienzo</a>
+    </section>
+    <p>Copyright 2022</p>
+  </footer>
+</body>
+</html> 
